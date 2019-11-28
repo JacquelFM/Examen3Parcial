@@ -29,6 +29,7 @@ export default class FIFO {
                 }
 
                 if (cont != 0) {
+                    nuevoNodo.siguiente = nodoPrioridad;
                     nodoPrioridad.siguiente = nuevoNodo;
                 } else {
                     nuevoNodo.siguiente = this._inicio;
