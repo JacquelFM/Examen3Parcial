@@ -24,6 +24,8 @@ export default class FIFO {
                     } else {
                         cont++;
                     }
+
+                    inicio = inicio.siguiente;
                 }
 
                 if (cont != 0) {
