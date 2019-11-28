@@ -1,4 +1,4 @@
-export default class FIFO {
+export default class PriorityFIFO {
     constructor() {
         this._inicio = null;
     }
@@ -29,7 +29,7 @@ export default class FIFO {
                 }
 
                 if (cont != 0) {
-                    nuevoNodo.siguiente = nodoPrioridad;
+                    nuevoNodo.siguiente = nodoPrioridad.siguiente;
                     nodoPrioridad.siguiente = nuevoNodo;
                 } else {
                     nuevoNodo.siguiente = this._inicio;

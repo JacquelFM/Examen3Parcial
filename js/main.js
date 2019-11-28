@@ -1,9 +1,9 @@
 import Nodo from "./Nodo.js";
-import FIFO from "./FIFO.js";
+import PriorityFIFO from "./FIFO.js";
 
 class Main {
     constructor() {
-        let fifo = new FIFO();
+        let fifo = new PriorityFIFO();
 
         document.querySelector("#btnAgregar").addEventListener("click", () => {
             let intNodo = document.querySelector("#num").value;
