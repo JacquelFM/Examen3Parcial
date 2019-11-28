@@ -2,7 +2,7 @@ export default class Nodo {
     constructor(dato, prioridad, siguiente) {
         this._dato = dato;
         this._prioridad = 0;
-        this._siguiente = null;
+        this._siguiente = siguiente;
     }
 
     get dato() {

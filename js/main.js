@@ -6,10 +6,14 @@ class Main {
         let fifo = new FIFO();
 
         document.querySelector("#btnAgregar").addEventListener("click", () => {
+            let intNodo = document.querySelector("#num").value;
+            let intPrioridad = document.querySelector("#prioridad").value;
 
-            let nodo = new Nodo();
-
-            fifo.agregarNodo();
+            fifo.agregarNodo(new Nodo(
+                intNodo,
+                intPrioridad,
+                null
+            ));
 
         });
 
